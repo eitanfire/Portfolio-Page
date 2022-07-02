@@ -4,9 +4,10 @@
   "description": "Git and NPM",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
     "start": "npm run lite",
-    "lite": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git"
@@ -14,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^6.0.1",
+    "scss": "node-sass -o css/ css/"
   }
 }
