@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="path/to/font-mfizz/font-mfizz.css" />
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <script src="https://kit.fontawesome.com/bec01d8631.js" crossorigin="anonymous"></script>
@@ -23,35 +24,47 @@
 
 </div>   
 <style>
-    .accordion {
-      background-color: #eee;
-      color: rgb(44, 168, 112);
+     .accordion {
+      background-color:	lightslategrey;
+      color: lightskyblue;
       cursor: pointer;
       padding: 18px;
       width: 100%;
       border: none;
       text-align: center;
       outline: double;
-      font-size: 30px;
+      font-size: 18px;
       transition: 0.4s;
+      
     }
     
+   /* .leadershipPanel {
+      color: rgb(255,251,150);
+      background-color: lightblue;
+    } */
+    
     .active, .accordion:hover {
-      background-color: #ccc;
+      background-color: rgb(255,251,150);
     }
     
     .accordion:after {
-      content: '\002B';
-      color: #777;
+      content: '\2606';
+      color: rgb(193, 12, 154);
       font-weight: bold;
       float: right;
       margin-left: 5px;
     }
     
-    .active:after {
-      content: "\2212";
+    img {
+      float: left;
+      margin: 5px;
+      width: 25%;
+      height: 25%;   
     }
-    
+    .active:after {
+      content: "\2605";
+    }
+
     .panel {
       padding: 0 18px;
       background-color: white;
@@ -59,6 +72,19 @@
       overflow: hidden;
       transition: max-height 0.2s ease-out;
     }
+
+    .leadershipPanel {
+      color: rgb(16, 61, 72);
+    }
+
+    .button {
+      color: rgb(16, 61, 72);
+    }
+
+    i {
+      margin-top: ;
+    }
+
     </style>
 
 </head>
@@ -79,7 +105,7 @@
  
  <p>I grew up in Boulder, Colorado. I attended Foothill Elementary, Centennial Middle School and graduated from Boulder High School. I attended St. John’s College for my undergraduate studies. I took a year off in between my sophomore and junior year of college and worked on a kibbutz in Israel. There I had the chance to stock shelves in a store, dig ditches, tend gardens, and I even took care of animals in a petting zoo!</p>
  
-<p>At the end of college I met, Haley, the love of my life and the woman who would become my wife. She liked me at first but she did not fall madly in love with me until I won a pie eating contest. I continued to pursue my interest in becoming a teacher by working at the Santa Fe Children’s Museum and at the Boys & Girls Club. Haley and I moved to Oregon together and lived there for several years while she finished college. I went to graduate school to learn how to become a better teacher at Lewis & Clark College.</p>
+<p>At the end of college I met, Haley, the love of my life and the woman who would become my wife. She liked me at first but she did not fall madly in love with me until I won a 🥧 eating contest. I continued to pursue my interest in becoming a teacher by working at the Santa Fe Children’s Museum and at the Boys & Girls Club. Haley and I moved to Oregon together and lived there for several years while she finished college. I went to graduate school to learn how to become a better teacher at Lewis & Clark College.</p>
      
    <p>Haley and I moved back to my hometown of Boulder, Colorado in 2010. During the week you will find me teaching social studies at September High School. Thank you for welcoming me. I look forward to learning more about you.</p>
             </div>
@@ -87,36 +113,49 @@
     </div>
 </div>
 
-<button class="accordion btn btn-success id=leadershipPanel">Leadership in Education
+<button  class="accordion btn btn-success">Leadership in Education
     <h3>12 years of classroom teaching experience.</h3>
 </button>
-<div class="panel">
-    <p>
-    QUALIFICATIONS
-</p>
+<div class="panel" id="leadershipPanel" >
+ <a href="https://www.linkedin.com/in/eitanfire/"><i class="fa-brands fa-linkedin fa-2xl fa-pull-left"></i></a>   
+    <h3>
+      QUALIFICATIONS
+      </h3>
 
-   <p> EDUCATION 
-        Lewis & Clark College                            
-        St. John's College, Santa Fe  
+   <ul><h3>EDUCATION </h3> 
+       <li> Lewis & Clark College    </li>                        
+        <li> St. John's College, Santa Fe  </li>
+    </ul>
     
-    Endorsed to teach Social Studies and English at the middle and high school level.
-    ★ Colorado Professional Teacher License  #240550
-    Intermediate knowledge of Hebrew and basic knowledge of Spanish.
+    <p>Endorsed to teach Social Studies and English at the middle and high school level.</p>
+  <p>★ Colorado Professional Teacher License  #240550</p>
+    <p>Intermediate knowledge of Hebrew and basic knowledge of Spanish.</p>
 
-    • Boulder County Latino History Project • The University of Colorado in Boulder                     Dec. 2014 - Present
+    <p>   • Boulder County Latino History Project • The University of Colorado in Boulder
 Nominated to join a leadership group dedicated to the study of local Latino history and hired to create a curriculum on the subject for school teachers in their classrooms.
-• Mentor Teacher • September School                                                   			           Aug. 2019 - June 2020
+</p>
+<p>   • Mentor Teacher • September School
 Mentored a student teacher in becoming a successful educator.
+</p>
 </p>
 </div>
 
 <button class="accordion btn btn-outline-warning">Competency in Innovation
+    <h3>devoloperIn(Eitan) = [
+      <i class="fa-brands fa-html5"></i> , 
+      <i class="fa-brands fa-css3"></i> ,
+      <i class="fa-brands fa-js"></i> ,
+      <i class="fa-brands fa-react"></i> ,
+      <i class="icon-ruby-on-rails"></i> ,
+      <i class="icon-ruby"></i> ]</h3>  
     <h3>Devoloper in HTML, CSS, Javascript, Ruby + Rail, React + Native</h3>
 </button>
 <div class="panel">
-  <p>21st Century Teacher Cohort • Boulder Valley School District                                               Dec. 2012 - Dec. 2015
-Selected to join a dynamic team of educators to collaboratively develop and lead the district’s integration of technology into the classroom. Trusted to choose and help guide the use of nearly $3,000 worth of technology tools.
+  <a href="https://github.com/eitanfire"><i class="fa-brands fa-github fa-2xl fa-pull-right "></i>
+    <p>21st Century Teacher Cohort • Boulder Valley School District</p> 
+    <p> Selected to join a dynamic team of educators to collaboratively develop and lead the district’s integration of technology into the classroom. Trusted to choose and help guide the use of nearly $3,000 worth of technology tools.</p>
 </p>
+
 </div>
 
 <div class="container">

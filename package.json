@@ -18,5 +18,8 @@
     "lite-server": "^2.5.4",
     "node-sass": "^6.0.1",
     "scss": "node-sass -o css/ css/"
+  },
+  "dependencies": {
+    "font-mfizz": "^2.4.1"
   }
 }
